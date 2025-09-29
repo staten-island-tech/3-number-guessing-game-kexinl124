@@ -1,0 +1,8 @@
+def number_guess_game(n):
+  n=8
+  input=int("Guess numbers from 1-10 to find n:")
+  while n!= 8:
+    n=("Incorrect,keep on guessing n:")
+  print("Correct ")
+
+   

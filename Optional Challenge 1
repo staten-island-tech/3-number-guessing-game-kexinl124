@@ -1,0 +1,4 @@
+def counting_from1throu10():
+ number=10
+ while number>=1:
+  number=number-1
