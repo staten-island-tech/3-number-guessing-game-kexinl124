@@ -3,11 +3,9 @@ def number_guess_game(x):
 x = input("Guess a number from 1-10: ")
 while x!= 8:
     x=input("Incorrect,keep on guessing:")
-print("Correct ")
-
 if x < 8:
     print('less than')
-elif x==8:
-    print('correct')
-else: 
+elif x>8:
     print('greater than')
+else: 
+    print('Correct')

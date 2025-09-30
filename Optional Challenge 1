@@ -1,9 +1,0 @@
-count = 1
-while count <= 5:
-    print("This is loop number", count)
-    count = count + 1
-""" 
-color=""
-while color != "done":
-    color = input("What is your favorite color? (type 'done' to finish): ")
-print("ok") """
