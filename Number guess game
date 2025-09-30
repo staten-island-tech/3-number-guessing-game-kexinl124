@@ -5,4 +5,9 @@ def number_guess_game(n):
     n=("Incorrect,keep on guessing n:")
   print("Correct ")
 
-   
+  if n < 8:
+    print('less than')
+  elif n==8:
+    print('correct')
+  else: 
+    print('greater than')
