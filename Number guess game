@@ -1,12 +1,13 @@
-def guessing_numbers(x):
-    random_numbers=8
+import random
+random(1,10)
 x = input("Guess a number from 1-10: ")
-while x!=8:
+while x!=random:
     x=input("Incorrect,keep on guessing:")
-    if x < 8:
+    if x < random:
      print('less than')
-    elif x > 8:
+    elif x > random:
      print('greater than')
     else: 
-     print('Correct')
-print("correct")
+     print('Correct') 
+     for i in range():
+       print("input")
