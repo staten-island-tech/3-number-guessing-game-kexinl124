@@ -3,8 +3,9 @@ random_int = random.randint(1,10)
 guess = 0 
 guess_history=[]
 
-while True:
+while guess!=random_int:
     guess=int(input("Guess numbers from 1-10: "))
+    print("Incorrect keep on guessing")
     
     if guess < random_int:
      print('Too small')
