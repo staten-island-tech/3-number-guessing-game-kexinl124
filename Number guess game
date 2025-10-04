@@ -1,13 +1,22 @@
 import random
-random(1,10)
-x = input("Guess a number from 1-10: ")
-while x!=random:
-    x=input("Incorrect,keep on guessing:")
-    if x < random:
-     print('less than')
-    elif x > random:
-     print('greater than')
+random_int = random.randint(1,10)
+guess = 0 
+guess_history=[]
+
+while True:
+    guess=int(input("Guess numbers from 1-10: "))
+    
+    if guess < random_int:
+     print('Too small')
+     guess_history.append(guess)
+     print(f"This is your guess history{guess_history}")
+
+    elif guess > random_int:
+     print('Too big')
+     guess_history.append(guess)
+     print(f"This is your guess history{guess_history}")
+
     else: 
      print('Correct') 
-     for i in range():
-       print("input")
+    print(f"This is your guess history{guess_history}")
+
