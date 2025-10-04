@@ -1,10 +1,11 @@
 import random
-random_int = random.randint(1,10)
+random_int = random.randint(1,1000)
 guess = 0 
 guess_history=[]
+print("This is the Number Guessing Game!")
 
 while guess!=random_int:
-    guess=int(input("Guess numbers from 1-10: "))
+    guess=int(input("Guess numbers from 1-1000: "))
     
     if guess < random_int:
      print('Too small')
@@ -17,9 +18,8 @@ while guess!=random_int:
      print(f"Incorrect, keep on guessing. This is your guess history{guess_history}")
 
     else: 
-     print('Correct') 
-    for i in range (1):
-      print (f"This is your guess history{guess_history}")
+     for i in range (1):
+      print (f"Correct,{guess} is the number. This is your guess history{guess_history}")
 
-print("You win")
+print("You win!")
 
