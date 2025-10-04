@@ -5,19 +5,21 @@ guess_history=[]
 
 while guess!=random_int:
     guess=int(input("Guess numbers from 1-10: "))
-    print("Incorrect keep on guessing")
     
     if guess < random_int:
      print('Too small')
      guess_history.append(guess)
-     print(f"This is your guess history{guess_history}")
+     print(f"Incorrect, keep on guessing. This is your guess history{guess_history}")
 
     elif guess > random_int:
      print('Too big')
      guess_history.append(guess)
-     print(f"This is your guess history{guess_history}")
+     print(f"Incorrect, keep on guessing. This is your guess history{guess_history}")
 
     else: 
      print('Correct') 
-    print(f"This is your guess history{guess_history}")
+     for _ in range(guess_history):
+      print(f"This is your guess history{_}")
+
+print("You win")
 
