@@ -10,17 +10,17 @@ while x!=random_int:
     
     if x < random_int:
      print('Too small')
-     guess_history(x)
+     guess_history.append(x)
      print(f"Incorrect, keep on guessing. This is your guess history{guess_history}")
 
     elif x > random_int:
      print('Too big')
-     guess_history(x)
+     guess_history.append(x)
      print(f"Incorrect, keep on guessing. This is your guess history{guess_history}")
 
     else: 
      for i in range (guess):
-      print (f"Correct,{guess} is the number. This is your guess history{guess_history}")
+      print (f"Correct,{x} is the number. This is your guess history{guess_history}")
 
 print("You win!")
 
