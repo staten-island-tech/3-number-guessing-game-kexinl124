@@ -3,8 +3,7 @@ random_int = random.randint(1,10)
 guess = 0 
 x = 0
 guess_history=[]
-print("This is the Number Guessing Game!")
-
+ 
 while x!=random_int:
     x=int(input("Guess numbers from 1-10: "))
     
